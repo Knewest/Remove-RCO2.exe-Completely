@@ -1,4 +1,14 @@
-Add-Type -AssemblyName System.Windows.Forms
+$scriptPath = $MyInvocation.MyCommand.Path
+
+$isAdmin = ([System.Security.Principal.WindowsPrincipal] [System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole] "Administrator")
+
+if (-not $isAdmin)
+{
+    Write-Host "This script requires administrator privileges because 'C:\Program Files (x86)\RCO2' is locked behind permissions. Please provide your password to the computer to continue.`nIf you have no password and this doesn't automatically go away, just press enter with nothing entered.."
+
+    Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$scriptPath`"" -Verb RunAs
+    Exit
+}
 
 $folderPath = "C:\Program Files (x86)\RCO2"
 
@@ -11,12 +21,12 @@ if (Test-Path -Path $folderPath)
     }
     catch
     {
-        Write-Output "`nUnable to delete the folder $folderPath.`nThis means you already removed it or never had it to begin with.`n"
+        Write-Output "`nUnable to delete the folder $folderPath. This means you already removed it or never had it to begin with.`n"
     }
 }
 else
 {
-    Write-Output "`nThe folder $folderPath could not be found.`nThis means you already removed it or never had it to begin with.`n"
+    Write-Output "`nThe folder $folderPath could not be found. This means you already removed it or never had it to begin with.`n"
 }
 
 $userResponse = Read-Host -Prompt "Do you want to scan the entire system for RCO2.exe and remove all instances of it? (Y/N)"
@@ -50,6 +60,8 @@ else
 {
     [System.Windows.Forms.MessageBox]::Show("No scan was performed. RCO2.exe might still be on the system.`n_________________________________________________________________________`n`n© Knew (2023-2023)`nThis program is licensed under Boost Software License 1.0.`n_________________________________________________________________________`n`nSource: https://github.com/Knewest")
 }
+
+
 
 # Source: https://github.com/Knewest/Remove-RCO2.exe-Completely
 # Copyright (Boost Software License 1.0) 2023-2023 Knew
