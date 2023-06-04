@@ -7,5 +7,5 @@ Remove RCO2.exe completely from your system as this software is now compromised.
   <img src="https://cdn.discordapp.com/attachments/753561208073879642/1114871401896226906/MHJ5cgtGjl.webp" alt="Image for noobs" style="cursor:pointer;"/>
 </a><br><br></ul>
 <ul><a href="https://github.com/Knewest/Remove-RCO2.exe-Completely/releases/">
-  <img src="https://cdn.discordapp.com/attachments/753561208073879642/1110746613950976051/DownloadButtonThisVersion.webp" alt="Download from Github" style="cursor:pointer;"/>
+  <img src="https://cdn.discordapp.com/attachments/753561208073879642/1110739988712271873/DownloadButtonFromGithub.webp" alt="Download from Github" style="cursor:pointer;"/>
 </a></ul>
