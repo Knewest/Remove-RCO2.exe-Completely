@@ -1,0 +1,6 @@
+If the script closes immediately, you are likely on Windows 11.
+
+Here are you solutions:
+- Try the batch script. This should work.
+- Manually open your Powershell (or command prompt) as an administrator and enter the following command:
+> powershell.exe -noprofile -executionpolicy bypass -file "C:\Directory\To\Where\You\Put\RCO2-Remover\Remove-RCO2-Completely_by-Knew.ps1"
