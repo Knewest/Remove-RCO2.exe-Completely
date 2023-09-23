@@ -10,9 +10,12 @@ Remove RCO2.exe completely from your system as this software is now compromised.
   <img src="https://cdn.discordapp.com/attachments/753561208073879642/1110739988712271873/DownloadButtonFromGithub.webp" alt="Download from Github" style="cursor:pointer;"/>
 </a></ul>
 
-#
+#         
+<br>
+<ul><a href="https://cdn.discordapp.com/attachments/1116290604507344936/1155012193511813250/tkAAB4uuIF.webp">
+  <img src="https://cdn.discordapp.com/attachments/1116290604507344936/1155012193511813250/tkAAB4uuIF.webp" alt="How the program looks like" style="cursor:pointer;"/>
+</a></ul>
 
-### If this Powershell script crashes for you on launch, you may have to use Powershell 7: <br> 
-- Download page: https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3 <br>
-- Github page: https://github.com/PowerShell/PowerShell/releases/ <br>
-- Quick download link (may not be the latest version): https://github.com/PowerShell/PowerShell/releases/download/v7.3.4/PowerShell-7.3.4-win-x64.msi
+#         
+
+### If this Powershell script crashes/closes for you on launch, please read the `READ-ME-IF-THE-SCRIPT-CLOSES-INSTANTLY.txt` note.
